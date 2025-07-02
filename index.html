@@ -3,7 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: bisque;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        min-height: 100vh;
+        width: 100%;
+      }
+    </style>
     <title>My Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container bg-dark text-white">
+      <ul class="d-flex justify-content-center py-3 nav nav-pills">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active" aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="experience.html" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="gallery.html" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="d-flex justify-content-center align-items-center mx-auto gap-3"
+      style="max-width: 700px"
+    >
+      <div>
+        <img
+          src="image/me.jpg"
+          class="rounded-5"
+          width="300"
+          height="400"
+          style="object-fit: cover"
+        />
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="itim-regular display-5 mb-3">Wisarut Sada</div>
+        <div class="itim-regular text-muted">
+          Hi, my nickname is Top. I graduated from Chiangmai University. Studied
+          Computer Engineering. Love games, books and anime.
+        </div>
+      </div>
+    </div>
+    <div class="display-5 d-sm-none text-center my-3">Wisarut Sada</div>
+
+    <p class="text-center fs-2">Skills</p>
+
+    <div class="card-group">
+      <div class="card">
+        <img src="image/program.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Programming</h5>
+          <p class="card-text">
+            I have experience coding HTML,CSS and Scratch.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/uxui.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Design UX/UI</h5>
+          <p class="card-text">I can design intuitive user interface.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/creative.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Creativity</h5>
+          <p class="card-text">
+            Develop unique marketing strategies and initiate the creation of
+            fresh, original content.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-muted m-4">
+      © 2025 Wisarut_Sada.com by Wisarut Sada
+    </p>
+  </body>
 </html>
